@@ -1,0 +1,30 @@
+{
+    "name": "shopie/neat-web",
+    "description": "Build web APIs backed by Neat Core",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Shopie",
+            "email": "dev@shopie.gr"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "App\\Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "php": "^8.2",
+        "shopie/neat-core": "^1.0"
+    },
+    "require-dev": {
+        "guzzlehttp/guzzle": "^7.8"
+    },
+    "minimum-stability": "stable"
+}

@@ -1,0 +1,6 @@
+/tests
+/vendor
+*.cache
+*.lock
+*.phar
+*.env
