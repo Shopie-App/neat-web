@@ -6,8 +6,9 @@ namespace App\Config;
 
 class Config
 {
-    public static function env(string $key): mixed
+    public static function env(string $key): ?string
     {
-        return $_ENV['NEATWEB_'.$key] ?? null;
+        $value = getenv('NEATWEB_'.$key);
+        return $value !== false ? $value : null;
     }
 }
